@@ -17,6 +17,7 @@ export const AddTodo = ({
         value={task}
         onChange={handleChanges}
         autoComplete="off"
+        placeholder="Add a new todo"
       />
       <button type="submit">+</button>
     </form>
