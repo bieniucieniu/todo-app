@@ -8,23 +8,7 @@ import { TodoRow } from "./TodoRow";
 import styles from "../styles.module.scss";
 
 export const TodoList = () => {
-  const [todos, setTodos] = useState<TodoProps[]>([
-    {
-      id: "first",
-      task: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, nesciunt aut! Delectus, ipsa adipisci quis totam unde velit sunt non dicta, asperiores corporis error nisi quam possimus mollitia, eaque ducimus.",
-      completed: false,
-    },
-    {
-      id: "secend",
-      task: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, nesciunt aut! Delectus, ipsa adipisci quis totam unde velit sunt non dicta, asperiores corporis error nisi quam possimus mollitia, eaque ducimus.",
-      completed: false,
-    },
-    {
-      id: "third",
-      task: "Lorem ipsum dolor, sit amet consectetur",
-      completed: false,
-    },
-  ]);
+  const [todos, setTodos] = useState<TodoProps[]>([]);
 
   const handleToggle = (id: string) => {
     const updatedTodos = todos.map((todo) => {
